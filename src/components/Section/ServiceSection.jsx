@@ -1,6 +1,6 @@
 
 import styled from "styled-components";
-import backgroundImage from "../../../public/images/tractor.jpg"; // Add your image to the 'assets' folder
+import backgroundImage from "../../../public/images/farm-cow.jpg"; // Add your image to the 'assets' folder
 
 const ServiceSection = () => {
     return (
