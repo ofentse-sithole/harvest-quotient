@@ -3,6 +3,7 @@ import HomeHeroSection from "../Section/HomeSection"
 import HomeAboutInfo from "../HomeSectionInfo/HomeAboutInfo"
 import HomeExtraInfo from "../HomeSectionInfo/HomeExtraInfo"
 import HomeServiceInfo from "../HomeSectionInfo/HomeServiceInfo"
+import Footer from "../Footer/Footer"
 
 function Home() {
     return (
@@ -11,6 +12,7 @@ function Home() {
             <HomeAboutInfo/>
             <HomeExtraInfo/>
             <HomeServiceInfo/>
+            <Footer/>
         </div>
     )
 }

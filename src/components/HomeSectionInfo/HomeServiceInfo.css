@@ -24,6 +24,10 @@
     text-align: center;
 }
 
+.highlight {
+    color: #009717;
+}
+
 .service-item p {
     color: white;
 }

@@ -6,7 +6,9 @@ const Services = () => {
         <section className="services-section">
 
             <div className="our-services">
-                <h2>Our Services</h2>
+                <h2>
+                    <b><span className="highlight">Our</span> Services</b>
+                </h2>
                 <p>At Harvest Quotient, we take pride in offering a diverse range of services to cater to both individual and commercial needs:</p>
             </div>
 
