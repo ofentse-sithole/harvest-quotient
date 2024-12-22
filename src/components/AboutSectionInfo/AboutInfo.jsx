@@ -1,5 +1,7 @@
 import React from "react";
 import "./AboutInfo.css"; // CSS file for styling
+import image1 from "../../../public/images/sheep.jpg"
+import image2 from "../../../public/images/farm-house.jpg"; 
 
 const AboutInfo = () => {
     return (
@@ -61,8 +63,8 @@ const AboutInfo = () => {
                 </p>
             </div>
             <div className="image-section">
-                <img src="../../../public/images/sheep.jpg" alt="Group 1" className="image top" />
-                <img src="../../../public/images/farm-house.jpg" alt="Group 2" className="image bottom" />
+                <img src={image1} alt="Group 1" className="image top" />
+                <img src={image2} alt="Group 2" className="image bottom" />
             </div>
         </div>
     );
