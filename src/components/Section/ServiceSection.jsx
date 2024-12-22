@@ -1,13 +1,13 @@
 
 import styled from "styled-components";
-import backgroundImage from "../../../public/images/farm.jpg"; // Add your image to the 'assets' folder
+import backgroundImage from "../../../public/images/tractor.jpg"; // Add your image to the 'assets' folder
 
-const HeroSection = () => {
+const ServiceSection = () => {
     return (
         <HeroContainer>
             <Content>
                 <Title>
-            <Highlight>Harvest Quotient</Highlight> <Moving>- Empowering Your Growth</Moving>
+                    <Highlight>Our Services</Highlight>
                 </Title>
             </Content>
         </HeroContainer>
@@ -36,13 +36,10 @@ const Title = styled.h1`
 `;
 
 const Highlight = styled.span`
-  color:rgb(186, 255, 91);
-`;
-
-const Moving = styled.span`
   color: white;
 `;
 
 
 
-export default HeroSection;
+
+export default ServiceSection;
