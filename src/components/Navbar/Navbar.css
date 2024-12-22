@@ -1,0 +1,133 @@
+.navbar {
+    background: #f7ffec;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    box-sizing: border-box;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    max-width: 1500px;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.navbar-logo {
+    color: #2edb10;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-image {
+    height: 120px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.menu-icon {
+    display: none;
+    color: #009717;
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 60vw;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+.nav-item {
+    height: 100px;
+}
+
+.nav-links {
+    color: #009717;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+}
+
+.nav-links:hover {
+    border-bottom: 4px solid #009717; 
+    transition: all 0.2s ease-out;
+    color: #009717; 
+}
+
+
+.fa-bars {
+    color: #009717;
+}
+
+@media screen and (max-width: 960px) {
+    .navbar-container {
+        justify-content: space-between;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 90vh;
+        position: absolute;
+        top: 100px;
+        left: -100%;
+        opacity: 0;
+        transition: all 0.5s ease;
+        background: #f7ffec;
+        z-index: 10;
+    }
+
+    .nav-menu.active {
+        left: 0;
+        opacity: 1;
+    }
+
+    .nav-links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    .nav-links:hover {
+        background-color: #f4f4f4;
+        border-radius: 0;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        font-size: 2rem;
+        color: #009717;
+    }
+
+    .fa-times {
+        font-size: 2rem;
+        color: #009717;
+    }
+}
