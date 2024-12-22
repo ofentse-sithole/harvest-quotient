@@ -1,0 +1,69 @@
+/* General styles for the section */
+.whychooseus-section {
+    padding: 20px;
+    text-align: center;
+    background: white;
+}
+
+/* Title styles */
+.whychooseus-title {
+    font-size: 2rem;
+    /* Reduce font size for better readability on mobile */
+    font-weight: bold;
+    margin-bottom: 20px;
+    /* Adjust margin for smaller screens */
+}
+
+.whychooseus-title .highlight {
+    color: #009717;
+}
+
+/* Container styles */
+.whychooseus-container {
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically on mobile */
+    align-items: center;
+    gap: 20px;
+    /* Add spacing between items */
+}
+
+
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+    .whychooseus-title {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .whychooseus-container {
+        gap: 15px;
+    }
+
+    .whychooseus-info h2 {
+        font-size: 1rem;
+    }
+
+    .whychooseus-info p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .whychooseus-title {
+        font-size: 1.8rem;
+    }
+
+    .whychooseus-container {
+        gap: 10px;
+    }
+
+    .whychooseus-info h2 {
+        font-size: 0.9rem;
+    }
+
+    .whychooseus-info p {
+        font-size: 0.99rem;
+    }
+}
