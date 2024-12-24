@@ -42,8 +42,8 @@ const ContactInfo = () => {
         {/* Contact Information */}
         <div className="contact-info">
           <h2>Contact Information</h2>
-          <p><strong>Email:</strong> info@cargovertex.com</p>
-          <p><strong>Phone:</strong> +27 11 275 3980</p>
+          <p><strong>Email:</strong> info@harvestquotient.co.za</p>
+          <p><strong>Phone:</strong> +27 11 275 4528</p>
         </div>
 
         {/* Contact Form */}
