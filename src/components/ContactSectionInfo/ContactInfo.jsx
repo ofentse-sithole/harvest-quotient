@@ -83,6 +83,12 @@ const ContactInfo = () => {
           <button type="submit">Send Message</button>
         </form>
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 };
