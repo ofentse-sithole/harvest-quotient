@@ -4,7 +4,18 @@ import './ContactInfo.css'; // Assuming you have a CSS file for styling
 const ContactInfo = () => {
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // More robust scroll handling
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+      
+      // Fallback for older browsers
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    }, 100);
   }, []);
 
 
